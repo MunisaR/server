@@ -5,7 +5,9 @@ import moment from "moment/moment.js";
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect("mongodb://127.0.0.1:27017/user_management");
+mongoose.connect(
+  "mongodb+srv://armeum:armeum@armeumdev.owmsjm0.mongodb.net/?retryWrites=true&w=majority/userManagement"
+);
 
 export const Users = new Schema({
   id: {
