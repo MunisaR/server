@@ -64,6 +64,10 @@ app.post("/delete_all_users", async function (req, res) {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.post("/delete_user", async function (req, res) {
   res.json({ response: "user has been deleted successfully" });
   try {
