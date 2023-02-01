@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/armeumuz/repositories/server/
     - - /bin/cp server.js  $DEPLOYPATH
-    - - /bin/cp models/User.js  $DEPLOYPATH
+    - - /bin/cp -R * models  $DEPLOYPATH
